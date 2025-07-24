@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bmi-heading{
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.App{
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container {
+    width: 30vw;
+    padding: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    background: #5555;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+  border-radius: 6px;
+  font-family: "Courier Prime", monospace;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.tabs .active {
+  background-color: #4CAF50;
+}
+
+.form {
+  font-family: "Courier Prime", monospace;
+  margin-top: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input, select {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+    font-family: "Courier Prime", monospace;
+}
+
+.height-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons {
+    font-family: "Courier Prime", monospace;
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    font-family: "Courier Prime", monospace;
+}
+
+.clear {
+  background-color: #888;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 25px;
+    background: #e2f0d9;
+    border-radius: 10px;
+}
+
+ul {
+  text-align: left;
+  margin-top: 10px;
+  font-family: "Courier Prime", monospace;
+}
+
+.meter {
+  position: relative;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.gauge {
+  height: 20px;
+  background: linear-gradient(to right, orange 0%, green 40%, yellow 70%, red 100%);
+  border-radius: 10px;
+  position: relative;
+}
+
+.needle {
+    width: 2px;
+    height: 33px;
+    background: black;
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform-origin: bottom;
+    transition: transform 0.5s ease;
+}
+
+.needle-18 { transform: rotate(-40deg); }
+.needle-22 { transform: rotate(-10deg); }
+.needle-25 { transform: rotate(10deg); }
+.needle-27 { transform: rotate(30deg); }
+.needle-30 { transform: rotate(50deg); }
+.needle-35 { transform: rotate(70deg); }
+.needle-40 { transform: rotate(90deg); }
+
+.risk-label {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #333;
+  font-family: "Courier Prime", monospace;
+}
+
+h2{
+    font-family: "Quattrocento", serif;
+}
