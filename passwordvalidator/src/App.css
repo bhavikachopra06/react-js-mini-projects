@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  transition: background 0.3s;
+}
+
+.container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.container.dark {
+  background: #222;
+  color: #eee;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  margin-top: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.eye-btn {
+  padding: 0 15px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.clear-btn {
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #c82333;
+}
+
+.rules {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.valid {
+  color: green;
+  margin: 5px 0;
+}
+
+.invalid {
+  color: red;
+  margin: 5px 0;
+}
+
+.strength-meter {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.weak {
+  color: red;
+}
+
+.medium {
+  color: orange;
+}
+
+.strong {
+  color: green;
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+}
+
+.container.dark input {
+  background: #333;
+  color: white;
+  border-color: #555;
+}
+
+.container.dark .eye-btn {
+  background: #555;
+}
